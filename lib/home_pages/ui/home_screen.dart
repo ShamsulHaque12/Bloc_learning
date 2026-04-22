@@ -1,5 +1,5 @@
 import 'package:counter_num_bloc/home_pages/bloc/counter/counter_bloc.dart';
-import 'package:counter_num_bloc/home_pages/ui/switch_screen.dart';
+import 'package:counter_num_bloc/switch_page/ui/switch_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
