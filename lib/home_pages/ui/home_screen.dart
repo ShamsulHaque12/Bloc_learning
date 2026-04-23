@@ -1,5 +1,6 @@
 import 'package:counter_num_bloc/home_pages/bloc/counter/counter_bloc.dart';
 import 'package:counter_num_bloc/switch_page/ui/switch_screen.dart';
+import 'package:counter_num_bloc/Image_page/ui/image_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -29,12 +30,33 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               },
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text("Switch", style: TextStyle(fontSize: 20)),
+                child: const Text("Switch", style: TextStyle(fontSize: 20)),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ImagePickerScreen(),
+                  ),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Text("Image Picker", style: TextStyle(fontSize: 20)),
               ),
             ),
           ),
